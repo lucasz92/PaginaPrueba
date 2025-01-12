@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  },
+  "scripts": {
+    "build": "tailwindcss -i ./css/tailwind.css -o ./css/styles.css --watch"
+  },
+  "dependencies": {
+    "@alpinejs/collapse": "^3.14.8",
+    "@alpinejs/intersect": "^3.14.8",
+    "@alpinejs/mask": "^3.14.8",
+    "@alpinejs/persist": "^3.14.8",
+    "alpinejs": "^3.14.8",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49"
+  },
+  "author": "lucas",
+  "license": "MIT"
+}

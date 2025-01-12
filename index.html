@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tienda</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="js/app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Sección de la Landing Page -->
+    <section class="flex flex-col items-start justify-center min-h-screen px-8 bg-cover bg-center relative" style="background-image: url('./assets/fondoprueba.jpg');"> 
+        <div class="flex items-center mb-4"> <img src="./assets/favpngree.png" alt="Logo de la tienda" class="w-20 object-cover mr-4"> 
+            <h1 class="text-5xl font-bold text-white" style="font-family: Playwrite AU SA, serif;">Amicia - Tejidos Artesanales</h1> 
+        </div>
+            <section class="text-gray-100 dark:text-white"> 
+                <h2 style="margin-left: 15rem" class="text-2xl font-semibold mb-4">Bienvenidos a nuestra tienda</h2> 
+                <section style="font-family: Montserrat, sans-serif" class="text-lg text-white dark:text-white">
+                <p>Un pedacito de nosotros en cada prenda. Tejer es compartir una parte de nuestra alma, <br> y cada puntada lleva consigo una historia única. 
+                <br><br>
+                 Más que ropa, una experiencia. <br>Nuestras prendas tejidas a mano te conectan con tus emociones más profundas, <br>transmitiendo serenidad y bienestar. 
+                </p>
+                </section>
+            </section> 
+
+            <!-- <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none" style="height: 0; border-right: 100vw solid transparent; border-bottom: 50px solid white;">
+
+            </div> -->
+        <br>
+        <br>
+
+        <div class="flex space-x-8 ">
+            <button type="button" class="cursor-pointer inline-flex justify-center items-center gap-2 whitespace-nowrap rounded-md bg-sky-500 px-4 py-2 text-sm font-medium tracking-wide text-white transition hover:opacity-75 text-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500 active:opacity-100 active:outline-offset-0 disabled:opacity-75 disabled:cursor-not-allowed dark:bg-sky-500 dark:text-white dark:focus-visible:outline-sky-500" onclick="location.href='#Tienda'">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="size-5 fill-white dark:fill-white" fill="currentColor">
+                    <path fill-rule="evenodd" d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z" clip-rule="evenodd" />
+                </svg>
+                Disponibles
+            </button>
+            <p class="text-gray-100 dark:text-white" style="margin-top: 7px">o</p>
+            <button type="button" class="cursor-pointer inline-flex justify-center items-center gap-2 whitespace-nowrap rounded-md bg-sky-500 px-4 py-2 text-sm font-medium tracking-wide text-white transition hover:opacity-75 text-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500 active:opacity-100 active:outline-offset-0 disabled:opacity-75 disabled:cursor-not-allowed dark:bg-sky-500 dark:text-white dark:focus-visible:outline-sky-500">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="size-5 fill-white dark:fill-white" fill="currentColor">
+                    <path fill-rule="evenodd" d="M7 4h-2l-3 12h18l-3-12h-2l-3-7z" clip-rule="evenodd" />
+                </svg>
+                Hacer Encargo
+            </button>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none" style="height: 0; border-right: 100vw solid transparent; border-bottom: 50px solid white;">
+
+        </div>
+    </section>
+
+    <!-- Sección de Productos -->
+    <hr class="my-12 h-0.5 border-t-0 bg-neutral-100 dark:bg-white/10" />
+
+    <section id="Tienda" class="px-8 py-16">
+        <h2 class="text-3xl font-bold mb-8 text-gray-600">Nuestros Productos</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <!-- Producto 1 -->
+            <div class="border border-gray-300 p-4 rounded-lg shadow-md" align="center">
+                <img src="/assets/prueba 2.jpg" alt="Producto 1" class="w-[250px] h-[450px] object-cover mb-4 rounded shadow-md">
+                <h3 class="text-xl font-semibold mb-2">Chaleco</h3>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Agregar al Carrito</button>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Encargar</button>
+            </div>
+            <!-- Producto 2 -->
+            <div class="border border-gray-300 p-4 rounded-lg shadow-md" align="center">
+                <img src="/assets/prueba 1.jpg" alt="Producto 2" class="w-[250px] h-[450px] object-cover mb-4 rounded shadow-md">
+                <h3 class="text-xl font-semibold mb-2">Producto 2</h3>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Agregar al Carrito</button>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Encargar</button>
+            </div>
+            <!-- Producto 3 -->
+            <div class="border border-gray-300 p-4 rounded-lg shadow-md" align="center">
+                <img src="/assets/prueba 3.jpg" alt="Producto 3" class="w-[250px] h-[450px] object-cover mb-4 rounded shadow-md">
+                <h3 class="text-xl font-semibold mb-2">Producto 3</h3>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Agregar al Carrito</button>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Encargar</button>
+            </div>
+            <!-- Producto 4 -->
+            <div class="border border-gray-300 p-4 rounded-lg shadow-md" align="center">
+                <img src="/assets/prueba 4.jpg" alt="Producto 4" class="w-[250px] h-[450px] object-cover mb-4 rounded shadow-md">
+                <h3 class="text-xl font-semibold mb-2">Producto 4</h3>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Agregar al Carrito</button>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Encargar</button>
+            </div>
+            <!-- Agrega más productos aquí -->
+        </div>
+    </section>
+</body>
+</html>
