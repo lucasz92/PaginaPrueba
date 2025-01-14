@@ -14,92 +14,96 @@
 </head>
 
 <body class="bg-gray-100 font-sans">
-    <nav class="bg-orange-50 opacity-75 shadow-lg w-full" x-data="{ open: false }">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> 
-            <div class="flex justify-center items-center h-16"> 
-                <div class="hidden sm:flex sm:space-x-8"> 
-                    <a href="https://www.instagram.com/amicia.artesanal/" target="_blank" class="flex items-center text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"> 
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
-                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
-                        </svg> Instagram 
-                    </a> 
-                    <a href="#contacto" class="flex items-center text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"> 
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/>
-                            <path d="m21.854 2.147-10.94 10.939"/>
-                        </svg> Contacto 
-                    </a> 
-                    <a href="#sobremi" class="flex items-center text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"> 
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/>
-                            <path d="M8 11h8"/>
-                            <path d="M8 7h6"/>
-                        </svg> Sobre Mí 
-                    </a> 
+
+    <div style="background-image: url('./assets/fondoprueba.jpg');">
+
+        <div class="fixed top-0 left-0 w-full h-16 flex items-center justify-center" style="background-color: rgb(241 245 249 / var(--tw-bg-opacity, 1)); opacity: 0.75;">
+
+            <nav class="w-full" x-data="{ open: false }" style="opacity: 1;">
+
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> 
+
+                    <div class="flex justify-center items-center h-16"> 
+
+                        <div class="hidden sm:flex sm:space-x-8"> 
+                            <a href="https://www.instagram.com/amicia.artesanal/" target="_blank" class="flex items-center text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"> 
+                                Instagram 
+                            </a> 
+                            <a href="#contacto" class="flex items-center text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"> 
+                                Contacto 
+                            </a> 
+                            <a href="#sobremi" class="flex items-center text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"> 
+                                Sobre Mí 
+                            </a> 
+                        </div>
+
+                            <div class="-mr-2 flex items-center sm:hidden"> 
+                                <button @click="open = !open" type="button" class="bg-gray-100 p-2 rounded-md text-gray-700 hover:text-gray-500 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 focus:text-gray-500"> 
+                                    <span class="sr-only">Open main menu</span> 
+                                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24"> 
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /> 
+                                    </svg> 
+                                </button>
+                            </div> 
+                    </div> 
+
+                </div> 
+            
+
+                <div x-show="open" class="sm:hidden"> 
+                    <div class="pt-2 pb-4 space-y-1"> 
+                        <a href="https://www.instagram.com/amicia.artesanal/" target="_blank" class="text-gray-900 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium">Instagram</a> 
+                        <a href="#contacto" class="text-gray-900 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium">Contacto</a> 
+                        <a href="#sobremi" class="text-gray-900 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium">Sobre Mí</a>
+                    </div> 
                 </div>
-            <div class="-mr-2 flex items-center sm:hidden"> 
-                <button @click="open = !open" type="button" class="bg-gray-100 p-2 rounded-md text-gray-700 hover:text-gray-500 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 focus:text-gray-500"> 
-                    <span class="sr-only">Open main menu</span> 
-                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24"> 
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /> 
-                    </svg> 
-                </button> 
-            </div> 
-        </div> 
-    </div> 
 
-    <div x-show="open" class="sm:hidden"> 
-        <div class="pt-2 pb-4 space-y-1"> 
-            <a href="https://www.instagram.com/amicia.artesanal/" target="_blank" class="text-gray-900 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium">Instagram</a> 
-            <a href="#contacto" class="text-gray-900 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium">Contacto</a> 
-            <a href="#sobremi" class="text-gray-900 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium">Sobre Mí</a>
-        </div> 
-    </div>
-    </nav>
+            </nav>
+            
 
-    <!-- Sección de la Landing Page -->
-    <section class="flex flex-col items-start justify-center min-h-screen px-8 bg-cover bg-center relative" style="background-image: url('./assets/fondoprueba.jpg');"> 
-
-    <!-- Contenido de la Landing Page -->
-        <div class="flex items-center mb-4"> <img src="./assets/favpngree.png" alt="Logo de la tienda" class="w-20 object-cover mr-4"> 
-            <h1 class="text-5xl font-bold text-white" style="font-family: Playwrite AU SA, serif;">Amicia - Tejidos Artesanales</h1>                 
         </div>
+        <hr class="h-0.5 border-t-0 bg-neutral-100 dark:bg-white/10" />
 
-            <section class="text-gray-100 dark:text-white" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+        <!-- Sección de la Landing Page -->
+        <section class="flex flex-col items-start justify-center min-h-screen px-8 bg-cover bg-center relative"> 
 
-                <h2 style="margin-left: 15rem" class="text-2xl font-semibold mb-4">Bienvenidos a nuestra tienda</h2>
+            <!-- Contenido de la Landing Page -->
+            <div class="flex items-center mb-4"> <img src="./assets/favpngree.png" alt="Logo de la tienda" class="w-20 object-cover mr-4"> 
+                <h1 class="text-5xl font-bold text-white" style="font-family: Playwrite AU SA, serif;">Amicia - Tejidos Artesanales</h1>                 
+            </div>
 
-                <section style="font-family: Montserrat, sans-serif" class="text-lg text-white dark:text-white">
-                    <p>Un pedacito de nosotros en cada prenda. Tejer es compartir una parte de nuestra alma, <br> y cada puntada lleva consigo una historia única. 
-                    <br><br>
-                    Más que ropa, una experiencia. <br>Nuestras prendas tejidas a mano te conectan con tus emociones más profundas, <br>transmitiendo serenidad y bienestar. 
-                    </p>
+                <section class="text-gray-100 dark:text-white" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+
+                    <h2 style="margin-left: 15rem" class="text-2xl font-semibold mb-4">Bienvenidos a nuestra tienda</h2>
+
+                    <section style="font-family: Montserrat, sans-serif" class="text-lg text-white dark:text-white">
+                        <p>Un pedacito de nosotros en cada prenda. Tejer es compartir una parte de nuestra alma, <br> y cada puntada lleva consigo una historia única. 
+                        <br><br>
+                        Más que ropa, una experiencia. <br>Nuestras prendas tejidas a mano te conectan con tus emociones más profundas, <br>transmitiendo serenidad y bienestar. 
+                        </p>
+                    </section>
+
                 </section>
-            </section> 
 
-            <!-- <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none" style="height: 0; border-right: 100vw solid transparent; border-bottom: 50px solid white;">
+            <br>
+            <br>
 
+            <div style="margin-left: 200px" class="flex space-x-8">
+                <button style="background-color: #e8c8cf" x-init = "document.getElementById('Tienda').scrollIntoView()" type="button" class="shadow-md inline-flex justify-center items-center gap-2 whitespace-nowrap rounded-md px-4 py-2 text-sm font-medium tracking-wide text-white transition hover:opacity-75 text-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500 active:opacity-100 active:outline-offset-0 disabled:opacity-75 disabled:cursor-not-allowed dark:bg-sky-500 dark:text-white dark:focus-visible:outline-sky-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                    Disponibles
+                </button>
+                <button style="background-color: #88ccca" type="button" class="shadow-md inline-flex justify-center items-center gap-2 whitespace-nowrap rounded-md px-4 py-2 text-sm font-medium tracking-wide text-white transition hover:opacity-75 text-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500 active:opacity-100 active:outline-offset-0 disabled:opacity-75 disabled:cursor-not-allowed dark:bg-sky-500 dark:text-white dark:focus-visible:outline-sky-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-truck"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg>
+                    Hacer Encargo
+                </button>
+            </div>
+
+            <!-- <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none" style="height: 0; border-right: 100vw solid transparent; border-bottom: 50px solid white;">                
             </div> -->
-        <br>
-        <br>
+        </section>
 
-        <div class="flex space-x-8 ">
-            <button x-init = "document.getElementById('Tienda').scrollIntoView()" type="button" class="cursor-pointer inline-flex justify-center items-center gap-2 whitespace-nowrap rounded-md bg-sky-500 px-4 py-2 text-sm font-medium tracking-wide text-white transition hover:opacity-75 text-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500 active:opacity-100 active:outline-offset-0 disabled:opacity-75 disabled:cursor-not-allowed dark:bg-sky-500 dark:text-white dark:focus-visible:outline-sky-500">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
-                Disponibles
-            </button>
-            <p class="text-gray-100 dark:text-white" style="margin-top: 7px">o</p>
-            <button type="button" class="cursor-pointer inline-flex justify-center items-center gap-2 whitespace-nowrap rounded-md bg-green-400 px-4 py-2 text-sm font-medium tracking-wide text-white transition hover:opacity-75 text-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500 active:opacity-100 active:outline-offset-0 disabled:opacity-75 disabled:cursor-not-allowed dark:bg-sky-500 dark:text-white dark:focus-visible:outline-sky-500">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-truck"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg>
-                Hacer Encargo
-            </button>
-        </div>
-        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none" style="height: 0; border-right: 100vw solid transparent; border-bottom: 50px solid white;">
-
-        </div>
-    </section>
+    </div>
 
     <!-- Sección de Productos -->
     <hr class="my-12 h-0.5 border-t-0 bg-neutral-100 dark:bg-white/10" />
@@ -111,46 +115,75 @@
             <div class="border border-gray-300 p-4 rounded-lg shadow-md" align="center">
                 <img src="/assets/prueba 2.jpg" alt="Producto 1" class="w-[250px] h-[450px] object-cover mb-4 rounded shadow-md">
                 <h3 class="text-xl font-semibold mb-2">Chaleco</h3>
-                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Agregar al Carrito</button>
-                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Encargar</button>
+                <button style="background-color: #88ccca" class="text-white px-4 py-2 rounded-lg">Ver mas</button>
             </div>
             <!-- Producto 2 -->
             <div class="border border-gray-300 p-4 rounded-lg shadow-md" align="center">
                 <img src="/assets/prueba 1.jpg" alt="Producto 2" class="w-[250px] h-[450px] object-cover mb-4 rounded shadow-md">
                 <h3 class="text-xl font-semibold mb-2">Producto 2</h3>
-                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Agregar al Carrito</button>
-                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Encargar</button>
+                <button style="background-color: #88ccca" class="text-white px-4 py-2 rounded-lg">Ver mas</button>
             </div>
             <!-- Producto 3 -->
             <div class="border border-gray-300 p-4 rounded-lg shadow-md" align="center">
                 <img src="/assets/prueba 3.jpg" alt="Producto 3" class="w-[250px] h-[450px] object-cover mb-4 rounded shadow-md">
                 <h3 class="text-xl font-semibold mb-2">Producto 3</h3>
-                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Agregar al Carrito</button>
-                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Encargar</button>
+                <button style="background-color: #88ccca" class="text-white px-4 py-2 rounded-lg">Ver mas</button>
             </div>
             <!-- Producto 4 -->
             <div class="border border-gray-300 p-4 rounded-lg shadow-md" align="center">
                 <img src="/assets/prueba 4.jpg" alt="Producto 4" class="w-[250px] h-[450px] object-cover mb-4 rounded shadow-md">
                 <h3 class="text-xl font-semibold mb-2">Producto 4</h3>
-                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Agregar al Carrito</button>
-                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Encargar</button>
+                <button style="background-color: #88ccca" class="text-white px-4 py-2 rounded-lg">Ver mas</button>
             </div>
             <!-- Agrega más productos aquí -->
+            <div class="border border-gray-300 p-4 rounded-lg shadow-md" align="center">
+                <img src="/assets/prueba 4.jpg" alt="Producto 4" class="w-[250px] h-[450px] object-cover mb-4 rounded shadow-md">
+                <h3 class="text-xl font-semibold mb-2">Producto 4</h3>
+                <button style="background-color: #88ccca" class="text-white px-4 py-2 rounded-lg">Ver mas</button>
+            </div>
+
+            <div class="border border-gray-300 p-4 rounded-lg shadow-md" align="center">
+                <img src="/assets/prueba 4.jpg" alt="Producto 4" class="w-[250px] h-[450px] object-cover mb-4 rounded shadow-md">
+                <h3 class="text-xl font-semibold mb-2">Jardinerito a dos agujas<br> con trenzas en cada</h3>
+                <button style="background-color: #88ccca" class="text-white px-4 py-2 rounded-lg">Ver mas</button>
+            </div>
+
+            <div class="border border-gray-300 p-4 rounded-lg shadow-md" align="center">
+                <img src="/assets/prueba 4.jpg" alt="Producto 4" class="w-[250px] h-[450px] object-cover mb-4 rounded shadow-md">
+                <h3 class="text-xl font-semibold mb-2">Producto 4</h3>
+                <button style="background-color: #88ccca" class="text-white px-4 py-2 rounded-lg">Ver mas</button>
+            </div>
+
+            <div class="border border-gray-300 p-4 rounded-lg shadow-md" align="center">
+                <img src="/assets/prueba 4.jpg" alt="Producto 4" class="w-[250px] h-[450px] object-cover mb-4 rounded shadow-md">
+                <h3 class="text-xl font-semibold mb-2">Producto 4</h3>
+                <button style="background-color: #88ccca" class="text-white px-4 py-2 rounded-lg">Ver mas</button>
+            </div>
         </div>
-        
+    </section>
 
     <!-- Secciones -->
-    <section id="contacto" class="py-8">
-        <h2 class="text-2xl font-bold">Contacto</h2>
-        <p>Puedes contactarme en: Que_te_importa@ejemplo.com.ar</p>
-    </section>
+        
+    <hr class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
+    
+    <div align="center">
+        <section id="contacto" class="py-8">
+            <h2 class="text-2xl font-bold">Contacto</h2>
+            <p>Puedes contactarme en: Que_te_importa@ejemplo.com.ar</p>
+        </section>
+    </div>
 
-    <section id="sobremi" class="py-8">
-        <h2 class="text-2xl font-bold">Sobre Mí</h2>
-        <p>Acá no dice nada.</p>
-    </section>
+    <hr class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
+
+    <div align="center">
+        <section id="sobremi" class="py-8">
+            <h2 class="text-2xl font-bold">Sobre Mí</h2>
+            <p>Acá no dice nada.</p>
+        </section>
+    </div>
 
     <!-- Script de Alpine.js -->
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2" defer></script>
+
 </body>
 </html>
